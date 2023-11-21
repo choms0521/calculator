@@ -1,0 +1,53 @@
+$background-color: #3a4663;
+$font-color: white;
+$calc-font-color: #434a59;
+$calc-button-color: #eae3dc;
+$calc-extra-button-color: #647198;
+$enter-button-color: #d03f2f;
+$result-padding-color: #181f33;
+$calc-paddiing-color: #242d44;
+$calc-button-shadow-color: #979797;
+$extra-button-shadow-color: #979797;
+$enter-button-shadow-color: #979797;
+
+$calc-button-character-color: #434a59;
+$calc-button-hover-color: #ffffff;
+$enter-button-hover-color: #f96b5b;
+$extra-button-hover-color: #a2b2e1;
+.root,
+.root[theme="dark"] {
+  $background-color: #3a4663;
+  $font-color: white;
+  $calc-font-color: #434a59;
+  $calc-button-color: #eae3dc;
+  $calc-extra-button-color: #647198;
+  $enter-button-color: #f96b5b;
+  $result-padding-color: #181f33;
+  $calc-paddiing-color: #242d44;
+  $calc-button-shadow-color: #979797;
+  $calc-button-character-color: #434a59;
+  $calc-button-hover-color: #ffffff;
+  $enter-button-hover-color: #f96b5b;
+  $extra-button-hover-color: #a2b2e1;
+}
+
+.root[theme="light"] {
+  $background-color: #d2cdcd;
+  $font-color: #36362c;
+  $calc-font-color: #434a59;
+  $calc-button-color: #e5e4e1;
+  $calc-extra-button-color: #647198;
+  $enter-button-color: #c85402;
+  $result-padding-color: #eeeeee;
+  $calc-paddiing-color: #d2cdcd;
+}
+.root[theme="semi"] {
+  $background-color: #3a4663;
+  $font-color: white;
+  $calc-font-color: #434a59;
+  $calc-button-color: #eae3dc;
+  $calc-extra-button-color: #647198;
+  $enter-button-color: #f96b5b;
+  $result-padding-color: #181f33;
+  $calc-paddiing-color: #242d44;
+}
