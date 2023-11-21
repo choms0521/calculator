@@ -1,76 +1,51 @@
-let calcResult = 0;
-let curInputNumber = '0';
-let curOperator = null;
-
-function makeComma(num) {
-  let temp = num > 0 ? num : -num;
-
-  let numString = num.toString();
-
-  stack = [];
-
-  let = countNumber = 0;
-  for (let i = numString.length - 1; i >= 0; i -= 1) {
-    if (stack.length > 0 && countNumber % 3 == 0) {
-      stack.push(",");
-      countNumber = 0;
-    }
-    stack.push(numString[i]);
-    countNumber += 1;
-  }
-
-  if (num < 0) {
-    stack.append("-");
-  }
-  const reversed = stack.reverse();
-
-  return reversed.join("");
-}
+import Calculator from "./calculator.js";
 
 
-function calcOperator(){
+const myCalculator = new Calculator();
+
+
+function updateUi() {
+
+  const calcResultBox = document.querySelector('.result .curInput')
+  calcResultBox.textContent = myCalculator.result;
+  const historySection = document.querySelector('.opHistory');
+  const historry = myCalculator.history
+  historySection.textContent=historry.join(" ")
 
 }
 
-function deleteInput() {
 
-}
-
-function doReset() {
-
-}
-function clickNum() {
-
-}
-
-function makeRealNumber() {
-
-}
 
 //claculator operator
 function doCalc(op) {
+
   switch (op) {
     case "del":
-        deleteInput();
+        myCalculator.resetInputNumber();
         break
     case '+':
     case '-':
-    case '*':
+    case 'x':
     case '/':
-        calcOperator(op)
+        myCalculator.doArithmathicOperator(op)
         break
     case 'reset':
-        doReset();
+      myCalculator.doReset();
         break
     case '.':
         makeRealNumber();
         break
+    case '=':
+      break
     default:
+      myCalculator.addCalcInput(op)
+
 
    
   }
-}
 
+  updateUi();
+}
 //event handlers
 const buttons = document.querySelectorAll(".btn");
 

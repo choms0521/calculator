@@ -26,12 +26,15 @@
           </div>
         </div>
 
-        <div class="result">0</div>
+        <div class="result">
+          <div class="opHistory"></div>
+          <div class="curInput">0</div>
+        </div>
         <div class="calc">
-          <button class="btn" data-value="7" >7</button>
+          <button class="btn" data-value="7">7</button>
           <button class="btn" data-value="8">8</button>
           <button class="btn" data-value="9">9</button>
-          <button class="btn" data-value="DEL">DEL</button>
+          <button class="btn" data-value="del">DEL</button>
           <button class="btn" data-value="4">4</button>
           <button class="btn" data-value="5">5</button>
           <button class="btn" data-value="6">6</button>
@@ -49,7 +52,9 @@
         </div>
       </div>
     </div>
+    <script type="module" src="/js/utility.js"></script>
+    <script type="module" src="./js/calculator.js"></script>
 
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
