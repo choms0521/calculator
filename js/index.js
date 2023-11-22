@@ -32,10 +32,8 @@ function doCalc(op) {
     case 'reset':
       myCalculator.doReset();
         break
-    case '.':
-        makeRealNumber();
-        break
     case '=':
+      myCalculator.finishOperation()
       break
     default:
       myCalculator.addCalcInput(op)
