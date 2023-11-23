@@ -1,3 +1,4 @@
+//dark
 $background-color: #3a4663;
 $font-color: white;
 $calc-font-color: #434a59;
@@ -6,48 +7,93 @@ $calc-extra-button-color: #647198;
 $enter-button-color: #d03f2f;
 $result-padding-color: #181f33;
 $calc-paddiing-color: #242d44;
-$calc-button-shadow-color: #979797;
-$extra-button-shadow-color: #979797;
-$enter-button-shadow-color: #979797;
-
+$calc-button-shadow-color: rgba(#979797, 0.5);
+$extra-button-shadow-color: rgba(#979797, 0.5);
+$enter-button-shadow-color: rgba(#979797, 0.5);
 $calc-button-character-color: #434a59;
 $calc-button-hover-color: #ffffff;
 $enter-button-hover-color: #f96b5b;
 $extra-button-hover-color: #a2b2e1;
-.root,
-.root[theme="dark"] {
-  $background-color: #3a4663;
-  $font-color: white;
-  $calc-font-color: #434a59;
-  $calc-button-color: #eae3dc;
-  $calc-extra-button-color: #647198;
-  $enter-button-color: #f96b5b;
-  $result-padding-color: #181f33;
-  $calc-paddiing-color: #242d44;
-  $calc-button-shadow-color: #979797;
-  $calc-button-character-color: #434a59;
-  $calc-button-hover-color: #ffffff;
-  $enter-button-hover-color: #f96b5b;
-  $extra-button-hover-color: #a2b2e1;
+$toggle-background-color: #242d44;
+$toggle-button-color: #d03f2f;
+
+//light
+$background-color-light: #f2f2f2;
+$font-color-light: #36362C;
+$calc-font-color-light: #36362C;
+$calc-button-color-light: white;
+$calc-extra-button-color-light: #378187;
+$enter-button-color-light: #C85402;
+$result-padding-color-light: white;
+$calc-paddiing-color-light: #D2CDCD;
+$calc-button-shadow-color-light: rgba(#979797, 0.5);
+$extra-button-shadow-color-light: rgba(#979797, 0.5);
+$enter-button-shadow-color-light: rgba(#979797, 0.5);
+$calc-button-character-color-light: #434a59;
+$calc-button-hover-color-light: #ffffff;
+$enter-button-hover-color-light: #f96b5b;
+$extra-button-hover-color-light: #a2b2e1;
+$toggle-background-color-light: #D2CDCD;
+$toggle-button-color-light: #d03f2f;
+//semi
+
+html[data-theme="dark"] {
+  --color-background-color: #{$background-color};
+  --color-font-color: #{$font-color};
+  --color-calc-font-color: #{$calc-font-color};
+  --color-calc-button-color: #{$calc-button-color};
+  --color-calc-extra-button-color: #{$calc-extra-button-color};
+  --color-enter-button-color: #{$enter-button-color};
+  --color-result-padding-color: #{$result-padding-color};
+  --color-calc-paddiing-color: #{$calc-paddiing-color};
+  --color-calc-button-shadow-color: #{$calc-button-shadow-color};
+  --color-enter-button-shadow-color: #{$enter-button-shadow-color};
+  --color-extra-button-shadow-color: #{$extra-button-shadow-color};
+
+  --color-calc-button-character-color: #{$calc-button-character-color};
+  --color-calc-button-hover-color: #{$calc-button-hover-color};
+  --color-enter-button-hover-color: #{$enter-button-hover-color};
+  --color-extra-button-hover-color: #{$extra-button-hover-color};
+  --color-toggle-background-color: #{$toggle-background-color};
+  --color-toggle-button-color: #{$toggle-button-color};
 }
 
-.root[theme="light"] {
-  $background-color: #d2cdcd;
-  $font-color: #36362c;
-  $calc-font-color: #434a59;
-  $calc-button-color: #e5e4e1;
-  $calc-extra-button-color: #647198;
-  $enter-button-color: #c85402;
-  $result-padding-color: #eeeeee;
-  $calc-paddiing-color: #d2cdcd;
+html[data-theme="light"] {
+  --color-background-color: #{$background-color-light};
+  --color-font-color: #{$font-color-light};
+  --color-calc-font-color: #{$calc-font-color-light};
+  --color-calc-button-color: #{$calc-button-color-light};
+  --color-calc-extra-button-color: #{$calc-extra-button-color-light};
+  --color-enter-button-color: #{$enter-button-color-light};
+  --color-result-padding-color: #{$result-padding-color-light};
+  --color-calc-paddiing-color: #{$calc-paddiing-color-light};
+  --color-calc-button-shadow-color: #{$calc-button-shadow-color-light};
+  --color-enter-button-shadow-color: #{$enter-button-shadow-color-light};
+  --color-extra-button-shadow-color: #{$extra-button-shadow-color-light};
+
+  --color-calc-button-character-color: #{$calc-button-character-color-light};
+  --color-calc-button-hover-color: #{$calc-button-hover-color-light};
+  --color-enter-button-hover-color: #{$enter-button-hover-color-light};
+  --color-extra-button-hover-color: #{$extra-button-hover-color-light};
+  --color-toggle-background-color: #{$toggle-background-color-light};
+  --color-toggle-button-color: #{$toggle-button-color-light};
 }
-.root[theme="semi"] {
-  $background-color: #3a4663;
-  $font-color: white;
-  $calc-font-color: #434a59;
-  $calc-button-color: #eae3dc;
-  $calc-extra-button-color: #647198;
-  $enter-button-color: #f96b5b;
-  $result-padding-color: #181f33;
-  $calc-paddiing-color: #242d44;
+html[data-theme="semi"] {
+  --color-background-color: #{$background-color};
+  --color-font-color: #{$font-color};
+  --color-calc-font-color: #{$calc-font-color};
+  --color-calc-button-color: #{$calc-button-color};
+  --color-calc-extra-button-color: #{$calc-extra-button-color};
+  --color-enter-button-color: #{$enter-button-color};
+  --color-result-padding-color: #{$result-padding-color};
+  --color-calc-paddiing-color: #{$calc-paddiing-color};
+  --color-calc-button-shadow-color: #{$calc-button-shadow-color};
+  --color-enter-button-shadow-color: #{$enter-button-shadow-color};
+  --color-extra-button-shadow-color: #{$extra-button-shadow-color};
+  --color-calc-button-character-color: #{$calc-button-character-color};
+  --color-calc-button-hover-color: #{$calc-button-hover-color};
+  --color-enter-button-hover-color: #{$enter-button-hover-color};
+  --color-extra-button-hover-color: #{$extra-button-hover-color};
+  --color-toggle-background-color: #{$toggle-background-color};
+  --color-toggle-button-color: #{$toggle-button-color};
 }

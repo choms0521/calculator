@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
-    <div class="root" theme="dark">
+    <div id="root" theme="dark">
       <div class="calculator">
         <div class="theme">
           <h1>calc</h1>
@@ -21,7 +21,11 @@
               <p>THEME</p>
 
               <input type="checkbox" id="theme-setting" />
-              <label for="theme-setting"></label>
+              <label for="theme-setting">
+                <span class="theme-toggle-box">
+                  <span class="theme-toggle"></span>
+                </span>
+              </label>
             </form>
           </div>
         </div>
